@@ -1,9 +1,12 @@
-# Global Federated Learning (GFL) Algorithms Codebase
+## FedDr+: Stabilizing Dot-regression with Global Feature Distillation for Federated Learning (TMLR'25)
+
+[OpenReview](https://openreview.net/forum?id=a6WthNFhL2)  
+Seongyoon Kim, Minchan Jeong, Sungnyun Kim, Sungwoo Cho, Sumyeong Ahn^,  Se-Young Yun^  (^: Corresponding Authors)  
 
 This repository is designed mainly for research, and pytorch implementation of GFL algorithms.  
 
 We implemented various FL algorithms in our framework: 
-- **FedAVG**, **FedProx**,  **Scaffold**, **MOON**, **FedNTD**, **FedEXP**, **FedSOL**, **FedBABU**, **SphereFed**, **FedETF**, **FedGELA**, and **FedDr+ (Ours)**.
+- **FedAvg**, **FedProx**,  **SCAFFOLD**, **MOON**, **FedNTD**, **FedExP**, **FedFN**, **FedSOL**, **FedBABU**, **SphereFed**, **FedETF**, **FedGELA**, and **FedDr+ (Ours)**.
 ## Installation
 
 First check that the requirements are satisfied:</br>
@@ -66,7 +69,7 @@ There are two ways to change the configurations:
 We provide example implementation scripts for CIFAR-10 and CIFAR-100.
 
 ###  (CIFAR10, VGG11) Experiment
-- FedAVG
+- FedAvg
 	- Shard Setting
 		- Run `sh fedavg_cifar10_shard.sh`.
 	- LDA Setting
@@ -77,7 +80,7 @@ We provide example implementation scripts for CIFAR-10 and CIFAR-100.
 		- Run `sh fedprox_cifar10_shard.sh`.
 	- LDA Setting
 		- Run `sh fedprox_cifar10_lda.sh`.
-- Scaffold
+- SCAFFOLD
 	- Shard Setting
 		- Run `sh scaffold_cifar10_shard.sh`.
 	- LDA Setting
@@ -95,7 +98,7 @@ We provide example implementation scripts for CIFAR-10 and CIFAR-100.
 	- LDA Setting
 		- Run `sh fedntd_cifar10_lda.sh`.
 
-- FedEXP
+- FedExP
 	- Shard Setting
 		- Run `sh fedexp_cifar10_shard.sh`.
 	- LDA Setting
@@ -138,7 +141,7 @@ We provide example implementation scripts for CIFAR-10 and CIFAR-100.
 		
 
 ###  (CIFAR100, mobileNet) Experiment
-- FedAVG
+- FedAvg
 	- Shard Setting
 		- Run `sh fedavg_cifar100_shard.sh`.
 	- LDA Setting
@@ -149,7 +152,7 @@ We provide example implementation scripts for CIFAR-10 and CIFAR-100.
 		- Run `sh fedprox_cifar100_shard.sh`.
 	- LDA Setting
 		- Run `sh fedprox_cifar100_lda.sh`.
-- Scaffold
+- SCAFFOLD
 	- Shard Setting
 		- Run `sh scaffold_cifar100_shard.sh`.
 	- LDA Setting
@@ -167,7 +170,7 @@ We provide example implementation scripts for CIFAR-10 and CIFAR-100.
 	- LDA Setting
 		- Run `sh fedntd_cifar100_lda.sh`.
 
-- FedEXP
+- FedExP
 	- Shard Setting
 		- Run `sh fedexp_cifar100_shard.sh`.
 	- LDA Setting
